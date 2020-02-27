@@ -14,6 +14,7 @@ Here's some of the talks that we participated in or might be helpful during your
 
 ### Breakout Sessions
 
-| Title | Link | 
-| ----- | -----|
-|Github Review | [Video]() | 
+| Title | Link | Code |
+| ----- | -----| -----|
+| Github Review | [Video]() | |
+| OO Review | [Video](https://youtu.be/ZjI0RxUFo-c) | [Code](https://github.com/learn-co-students/atlanta-web-021720/tree/master/breakout-code_challenge_review)
