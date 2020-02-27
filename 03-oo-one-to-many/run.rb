@@ -8,8 +8,8 @@ require_relative './user'
 lyn = User.new("CoderMom1212")
 moxxie = User.new("Moxxie7")
 
-tweet1 = Tweet.new("I love Ruby!", moxxie)
-tweet2 = Tweet.new("I hate Ruby!", lyn)
-tweet3 = Tweet.new("I love Flatiron!", moxxie)
+tweet1 = Tweet.new("I love Ruby!", lyn)
+tweet2 = Tweet.new("I hate Ruby!", moxxie)
+tweet3 = Tweet.new("I love Flatiron!", lyn)
 
 binding.pry
