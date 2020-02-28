@@ -10,6 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_02_28_183650) do
+
+  create_table "passengers", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "gender"
+  end
+
+  create_table "rides", force: :cascade do |t|
+    t.integer "subway_id"
+    t.integer "passenger_id"
+  end
+
+  create_table "subways", force: :cascade do |t|
+    t.string "line"
+    t.integer "capacity"
+    t.string "status"
+    t.string "local_or_express"
+  end
 
 end
