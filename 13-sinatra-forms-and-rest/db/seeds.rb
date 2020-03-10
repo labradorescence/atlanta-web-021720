@@ -1,0 +1,5 @@
+Friend.create(name: "Myself", age: 35)
+Friend.create(name: "Ariel", age: 100)
+Friend.create(name: "Joey", age: 58)
+Friend.create(name: "Susan", age: 72)
+Friend.create(name: "Chan", age: 20)
