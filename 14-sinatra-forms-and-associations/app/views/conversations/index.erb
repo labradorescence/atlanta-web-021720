@@ -1,0 +1,7 @@
+<h1>All the Conversations!</h1>
+
+<ul>
+    <% @conversations.each do |conversation| %>
+        <li><%= conversation.topic %></li> <br/>
+    <% end %>
+</ul>
