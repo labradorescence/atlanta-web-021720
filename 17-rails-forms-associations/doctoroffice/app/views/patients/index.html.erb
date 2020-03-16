@@ -1,0 +1,19 @@
+<h1 class="display-3" style="padding-top: 30px;">Our Patients </h1>
+
+<div class="container">
+    <div class="row row-cols-2">
+
+        <div class="col"> 
+            <ul style= "list-style-type: none;">
+                <% @patients.each do |patient| %>
+                <li style="padding-top: 20px;"><h6><%= link_to patient.name, patient %>, <%= patient.condition %></h6></li>
+                <% end %>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" style="padding-top: 30px;">
+    <h3>Add yourself to the database <%= link_to "here.", "/patients/new" %></h3>
+</div>
