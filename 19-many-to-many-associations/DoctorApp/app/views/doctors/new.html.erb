@@ -1,0 +1,12 @@
+<% if flash[:message] %>
+    <%= flash[:message] %>
+<% end %>
+
+<%= form_for(@doctor) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %> 
+    <%= f.label :nickname %>
+    <%= f.text_field :nickname %> 
+    <%= collection_select :doctor_companion, :companion_id, Companion.all, :id, :name %>
+    <%= f.submit %>
+<% end %>
