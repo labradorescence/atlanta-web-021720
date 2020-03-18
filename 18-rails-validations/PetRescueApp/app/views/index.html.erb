@@ -1,0 +1,10 @@
+<h1>All the Owners!</h1>
+
+<ul>
+    <% @owners.each do |owner| %>
+       <li><%= owner.name %></li>
+        <% owner.pets.each do |pet| %>
+            <li><%= pet.name %></li>
+        <% end %>
+    <% end %>
+</ul>
