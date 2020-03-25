@@ -1,0 +1,10 @@
+<h1>Edit a book</h1>
+
+<%= form_for @book, method: :patch do |f| %>
+    Title:
+      <%= f.text_field :title %> <br /><br />
+    Description:
+      <%= f.text_field :desc %> <br /><br />
+
+    <%= f.submit %>
+<% end %>

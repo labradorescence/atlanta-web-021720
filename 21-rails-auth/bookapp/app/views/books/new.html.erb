@@ -1,0 +1,17 @@
+<h1>Create a new book</h1>
+
+<% if flash[:error]%>
+  <h3 style='color: red;'>
+    Error: <%= @book.errors.full_messages %>
+  </h3>
+<% end %>
+
+
+<%= form_for @book, method: :post do |f| %>
+    Title:
+      <%= f.text_field :title %> <br /><br />
+    Description:
+      <%= f.text_field :desc %> <br /><br />
+  
+    <%= f.submit %>
+<% end %>

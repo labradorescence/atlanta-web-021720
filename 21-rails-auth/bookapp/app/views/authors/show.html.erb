@@ -1,0 +1,13 @@
+<h3> Username: <%= current_author.username %> </h3>
+
+<h4>List of authors books</h4>
+
+<% current_author.books.each do |book| %>
+  <ul>
+    <li> <b> Title: <%= book.title %> </b> </li>
+    <li> Description: <%= book.desc %> </li>
+
+    <%= link_to "Edit", edit_book_path(book) %>
+    <%= button_to "Delete", book, :method => :delete %>
+  </ul>
+<% end%>

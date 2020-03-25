@@ -1,0 +1,13 @@
+<h1>List of all books</h1>
+
+<% @books.each do |book| %>
+  <ul>
+    <li> <b> Title: <%= book.title %> </b> </li>
+    <li> Description: <%= book.desc %> </li>
+
+    <% if book.author_id == current_author.id %>
+      <%= link_to "Edit", edit_book_path(book) %>
+      <%= button_to "Delete", book, :method => :delete %>
+    <% end %>
+  </ul>
+<% end%>

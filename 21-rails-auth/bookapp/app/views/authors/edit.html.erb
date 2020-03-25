@@ -1,0 +1,7 @@
+<h1>This is edit page</h1>
+
+<%= form_for @author, method: :patch do |f| %>
+    Username: <%= f.text_field :username %><br /><br />
+    <br />
+    <%= f.submit %>
+  <% end %>
